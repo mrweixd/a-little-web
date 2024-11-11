@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    
+    background: url('test_background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    overflow: hidden;
+margin: 0;
+padding: 0;
+}
+.bar{
+list-style-type: none;
+margin: -10px;
+padding: 0;
+overflow: hidden;
+background-color: #24292e;
+
+}
+.bar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease; /* Add transition for background color, text color, and transform */
+}
+.bar a:hover {
+  background-color: #ffffff;
+  color: #24292e;
+  transform: scale(1.1,1.1);
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+header {
+  background-color: #24292e;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+#signin, #reg{
+    
+    float: right;
+}
+.jump a{
+    color: #ffffff;
+    text-decoration: none;
+}
+nav li {
+    float: left;
+}
+.concontainer{
+    color: black;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.container {
+    width: 50%;
+    margin: auto;
+    background-color: transparent;
+    border: 1px solid #757575;
+    backdrop-filter: blur(20px);
+    border: 5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    background-color: transparent;
+    width: 95%;
+    padding: 10px ;
+    margin: 10px 0;
+    border: 1px solid #757575;
+    border-radius: 5px;
+    color: #ffffff;
+}
+.container input[type="submit"] {
+    width: 50%;
+    text-align: center; 
+    padding: 8px ;
+    margin: 20px 25% ; /* Set margin to auto to center the button horizontally */
+    border: none;
+    background: linear-gradient(180deg, #1e3d59, #206a5d);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.concontainer input::placeholder{
+    color: #ffffff;
+}
+.login a{
+    color: #000000;
+    text-decoration: none;
+}
+.regis a{
+    text-decoration: none;
+}
+input[type="submit"]:hover {
+    background: linear-gradient(315deg, #1e3d59, #206a5d);
+}
+.dropdown {
+float: left; /* 左浮動 */
+overflow: hidden; /* 清除浮動元素 */
+}
+.dropdown .dropbtn {
+font-size: 16px; /* 字體大小 */
+border: none; /* 移除邊框 */
+outline: none; /* 移除外框 */
+color: white; /* 文字顏色為白色 */
+background-color: inherit; /* 繼承背景顏色 */
+margin: 0; /* 清除外邊距 */
+padding: 14px 20px; /* 內邊距 */
+&:hover{
+background-color: #ddd; /* 滑鼠懸停時背景顏色變為淺灰色 */
+color: black; /* 文字顏色變為黑色 */
+transform: scale(1.1,1.1);
+transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+}
+.dropdown-content {
+display: none; /* 隱藏下拉菜單 */
+position: absolute; /* 絕對定位 */
+background-color: #f9f9f9; /* 背景顏色 */
+min-width: 160px; /* 最小寬度 */
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* 陰影效果 */
+z-index: 1; /* 層級 */
+}
+.dropdown-content a {
+float: none; /* 不浮動 */
+color: black; /* 文字顏色為黑色 */
+padding: 12px 16px; /* 內邊距 */
+text-decoration: none; /* 移除底線 */
+display: block; /* 塊級元素 */
+text-align: left; /* 文字左對齊 */
+}
+.dropdown-content a:hover {
+background-color: #ddd; /* 滑鼠懸停時背景顏色變為淺灰色 */
+color: black; /* 文字顏色變為黑色 */
+}
+.dropdown:hover .dropdown-content {
+display: block; /* 滑鼠懸停時顯示下拉菜單 */
+}
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

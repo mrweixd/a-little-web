@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Mom Articles</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='deco.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="bar">
+                <li><a href="/">Home</a></li>
+                <li><a href="/web">Issue</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Article</button>
+                    <div class="dropdown-content">
+                        <a href="/1">遊戲</a>
+                        <a href="/2">日常</a>
+                        <a href="/3">問題</a>
+                        <a href="/4">感情</a>
+                        <a href="/5">程式</a>
+                        <a href="/6">梗圖</a>
+                        <a href="/7">桐人</a>
+                        <a href="/8">閒聊</a>
+                        <a href="/9">你媽</a>
+                        <a href="/A">家庭</a>
+                        <a href="/B">瑟瑟</a>
+                        <a href="/C">其他</a>
+                    </div>
+                </div>
+                {% if g.username != 'Visitor' %}
+                    <li id="logout"><a href="/logout">Log Out</a></li>
+                    <li id="username"><a href="#">{{ g.username }}</a></li>
+                {% else %}
+                    <li id="signin"><a href="/signin">Sign In</a></li>
+                    <li id="reg"><a href="/register">Register</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+    
+    <header>
+        <ul class="bar2">
+            <h1>你媽類文章區</h1>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="left">
+            <a href="{{ url_for('web') }}">
+                我要發文!
+            </a>
+            <img src="{{ url_for('static', filename='mumei.png') }}">
+        </div>
+
+        <div class="context">
+            {% for article in articles %}
+                <div class="art">
+                    <a href="{{ url_for('show_article_page', article_id=article[0]) }}">
+                        <span>{{ article[1] }}</span>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
