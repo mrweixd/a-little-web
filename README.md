@@ -11,3 +11,6 @@
 ![image](https://github.com/user-attachments/assets/c4beac3f-f034-49ca-be34-442fb73f4a50)
 ![image](https://github.com/user-attachments/assets/2ed61fa0-f7bc-4c47-bfe1-e3e49b8558b9)
 
+## Issue an article
+  You can issue an article on this page. The first part is the topic, followed by the context, then, you can choose which category it should be. 
+![image](https://github.com/user-attachments/assets/f6efe33d-a6ec-4390-82bd-e1271c3fc8f6)
