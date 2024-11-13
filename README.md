@@ -1,5 +1,37 @@
 # a-little-web
   This is a project that aims to practice making websites.
+# Architecture
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/ecd44555-d7e7-4467-84bf-c77e22291691">
+
+## Major Component
+* User Authentication
+  * Registration: Users can create accounts by providing a username, password, and email.
+  * Login: Registered users can log in to access additional features.
+  * Access Control: Only logged-in users can post articles and comments.
+* Article Management
+  * Post Articles: Logged-in users can create articles with a title, content, and category selection.
+  * Browse Articles: Users can view articles categorized by topics.
+  * Article Details: Users can view full articles along with associated comments.
+* Comment System
+  * Post Comments: Logged-in users can comment on articles.
+  * Display Comments: Comments are displayed under each article in chronological order.
+
+
+## Database schema
+* The database has three tables. The first one stores all the account.
+  * Users Table: stores user ID, username, password, and email.
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/416bf16d-5adb-4a1c-acd1-5be4ba4075a6">
+
+* The second stores the informaton of the articles.
+  * Articles Table: stores article ID, title, content, category, author, article ID.
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/a031a487-c3ba-4262-8ca0-e8283d226efa">
+
+* The third one stores all the comments.
+  * Comments Table: stores content, article ID, author name.
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/c81ca470-a2b1-4e8c-9f56-095e4320f36c">
+
 
 ## Main Page
   This is the main page when you launch Python. You can click the left button for the articles or the right button to log in. There is also a navigation bar that you can use to turn to other pages.
@@ -31,13 +63,6 @@ SENDER_PASSWORD = 'yourpassowrd'  #and password
   If you see something that intrigues you, you can also leave a comment below it!
 ![bandicam2024-11-1115-53-41-485-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b8e2fe74-e835-48d1-8231-ee9bc7c3b929)
 
-## Database schema
-The database has three tables. The first one stores all the account.
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/416bf16d-5adb-4a1c-acd1-5be4ba4075a6">
-The second stores the informaton of the articles.
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/a031a487-c3ba-4262-8ca0-e8283d226efa">
-The third one stores all the comments.
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/c81ca470-a2b1-4e8c-9f56-095e4320f36c">
 
 
 That's pretty much all this project does. 
