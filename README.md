@@ -31,6 +31,15 @@ SENDER_PASSWORD = 'yourpassowrd'  #and password
   If you see something that intrigues you, you can also leave a comment below it!
 ![bandicam2024-11-1115-53-41-485-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/b8e2fe74-e835-48d1-8231-ee9bc7c3b929)
 
+## Database schema
+The database has three tables. The first one stores all the account.
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/416bf16d-5adb-4a1c-acd1-5be4ba4075a6">
+The second stores the informaton of the articles.
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/a031a487-c3ba-4262-8ca0-e8283d226efa">
+The third one stores all the comments.
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/c81ca470-a2b1-4e8c-9f56-095e4320f36c">
+
 
 That's pretty much all this project does. 
+
 
